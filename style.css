@@ -10,6 +10,7 @@
 .container{
     max-width: 1440px;
     margin: 0 auto;
+    padding: 10px;
 }
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
@@ -51,17 +52,22 @@ nav{
     padding: 50px 0px;
     
 }
-nav>ul {
+
+.icons-items{
+    display: flex;
+    gap: 15px;
+}
+.icons-items>ul {
     display: flex;
     gap: 30px;
 }
-nav>ul >li{
+.icons-items>ul >li{
     list-style: none;
     font-size: var(--font-secondary);
     font-weight: 600;
     color: var(---primary-color);
 }
-nav>ul h1{
+.icons-items>ul h1{
     font-size: var(--font-primary);
     font-weight: 700;
     color:var(---primary-color);
@@ -86,6 +92,10 @@ nav>ul h1{
     font-weight: 700;
     color: var(---primary-color);
     margin-bottom: 20px;
+}
+.banner-image> img{
+    background-image: url(./images/Circle\ design.svg);
+
 }
 /* ****************** company-image ****************************** */
 .company-image{
@@ -222,22 +232,32 @@ footer >ul >li{
   
     gap: 0px;
 }
+
+
  #bars{
         display:inline;
     }
     #icons{
         display: none;
     }
+    #shopping{
+    display: block;
+}
     .banner
     {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 0px;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .banner-text{
-       width: 80%;
+       width: 100%;
         text-align: center;
       
+    }
+    .banner-text >h1{
+        font-size: 1.5rem;
     }
     .banner-image >img{
         width:100%;
@@ -305,6 +325,7 @@ footer>p{
          gap: 20px;
 
     }
+    
  
     .banner{
        justify-content: center;
