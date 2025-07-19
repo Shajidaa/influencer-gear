@@ -228,8 +228,13 @@ footer >ul >li{
     }
     nav{
        /* padding: 0px 2px; */
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
+    /* nav >h1{
+        font-size: 1rem;
+    } */
     nav>ul {
   
     gap: 0px;
@@ -237,17 +242,17 @@ footer >ul >li{
 
 
  #bars{
-      background-color: #E02C6D;
-        position: relative;
-        top: 100px;
-        right: 23px;
+         display: inline;
+         position: relative;
+        bottom:-75px;
+        left: 1px;
     }
     #icons{
         display: none;
     }
     #shopping{
     display: block;
-}
+    }
     .banner
     {
         flex-direction: column-reverse;
