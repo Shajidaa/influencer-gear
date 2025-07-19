@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/************** share style ************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+ 
+}
+.description{
+    font-size: 1rem;
+    color: var(---primary-color);
+    font-weight:600;
+}
+.btn-primary{
+    font-size: 1rem;
+    background-color: var(--button-color);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+:root{
+    ---primary-color:#3A3A3A;
+    --text-color:#18191F;
+    --button-color:#E02C6D;
+    --gray-color:#787885;
+    --dark-color:rgba(0, 0, 0, 0.87);
+    --font-primary:1.25rem;
+    --font-secondary:1rem;
+   
+
+
+}
+/* *********** navbar ************** */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    
+}
+nav>ul {
+    display: flex;
+    gap: 30px;
+}
+nav>ul >li{
+    list-style: none;
+    font-size: var(--font-secondary);
+    font-weight: 600;
+    color: var(---primary-color);
+}
+nav>ul h1{
+    font-size: var(--font-primary);
+    font-weight: 700;
+    color:var(---primary-color);
+
+}
+#bars{
+    display: none;
+}
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10px;
+
+
+}
+.banner-text{
+    width: 50%;
+}
+.banner-text h1{
+    font-size:3.5rem ;
+    font-weight: 700;
+    color: var(---primary-color);
+    margin-bottom: 20px;
+}
+/* ****************** company-image ****************************** */
+.company-image{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 1110px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        margin: 0 auto;
+    }
+    nav{
+       /* padding: 0px 2px; */
+        justify-content: space-evenly;
+    }
+    nav>ul {
+  
+    gap: 0px;
+}
+ #bars{
+        display:inline;
+    }
+    #icons{
+        display: none;
+    }
+    .banner
+    {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+    }
+    .banner-text{
+       width: 80%;
+        text-align: center;
+      
+    }
+    .banner-image >img{
+        width:100%;
+         text-align: center;
+         margin-top: 20px;
+    }
+   
+    .company-image {
+         
+        flex-wrap: wrap;
+        width: 270px;
+        margin: 0px auto ;
+        padding-top: 20px;
+    }
+     .company-image>img{
+        width: 50px;
+     }
+}
+
+/* medium device  */
+@media screen and (min-width:577px ) and (max-width:1024px) {
+    .container{
+        margin: 0 auto;
+    }
+      nav , .banner {
+       /* padding: 0px 2px; */
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+         gap: 20px;
+
+    }
+ 
+    .banner{
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    .banner-text{
+       width: 80%;
+        text-align: center;
+      
+    }
+    .banner-image >img{
+        width:100%;
+         text-align: center;
+         margin-top: 20px;
+    }
+    .company-image {
+         flex-wrap: wrap;
+        align-items: center;
+        width: 550px;
+        padding: 20px 0px;
+        margin: 0px auto;
+       
+    }
+     .company-image>img{
+        width: 80px;
+     }
+}
