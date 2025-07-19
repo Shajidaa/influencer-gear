@@ -95,6 +95,8 @@ nav{
 }
 .banner-image> img{
     background-image: url(./images/Circle\ design.svg);
+    
+    background-size: cover;
 
 }
 /* ****************** company-image ****************************** */
@@ -235,7 +237,10 @@ footer >ul >li{
 
 
  #bars{
-        display:inline;
+      background-color: #E02C6D;
+        position: relative;
+        top: 100px;
+        right: 23px;
     }
     #icons{
         display: none;
