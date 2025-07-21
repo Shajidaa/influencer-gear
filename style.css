@@ -244,8 +244,8 @@ footer >ul >li{
  #bars{
          display: inline;
          position: relative;
-        /* bottom:-75px;
-        left: 1px; */
+       
+        left: 1px;
     }
     #icons{
         display: none;
